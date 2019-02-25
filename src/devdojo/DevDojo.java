@@ -12,10 +12,9 @@ public class DevDojo {
         Estudante estudante = new Estudante();
         estudante.nome = "Teste Silva";
         estudante.idade = 55;
-        estudante.notas = new double[]{6,6,6};
-                       
-        estudante.tirarMedia();
+        estudante.notas = new double[]{5,6,6};                       
         estudante.print();
+        estudante.tirarMedia();       
         
     }
     

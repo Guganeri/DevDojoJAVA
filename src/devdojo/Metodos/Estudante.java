@@ -11,9 +11,11 @@ public class Estudante {
  public void print(){
      System.out.println("Nome: "+this.nome);
      System.out.println("Idade: "+this.idade);
-     System.out.println("Notas: "+this.notas);             
- }   
- 
+     System.out.print("Notas:");
+     for (double nota: notas){
+         System.out.print(nota+" ");             
+     }     
+ }    
  public void tirarMedia(){
      double media = 0;
      for(double nota: notas){
@@ -21,10 +23,10 @@ public class Estudante {
      }
      media = media / notas.length;
      
-     if(media > 6){
-         System.out.println("Aprovado");         
+     if(media >= 6){
+         System.out.println("\nA média é:"+media+"\nSituação: Aprovado");         
      }else{
-         System.out.println("Reprovado");
+         System.out.println("\nA média é:"+media+"\nSituação: Reprovado");
      }         
  }            
 }
